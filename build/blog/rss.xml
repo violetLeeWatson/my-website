@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>My Site Blog</title>
+        <link>https://your-docusaurus-site.example.com/blog</link>
+        <description>My Site Blog</description>
+        <lastBuildDate>Sun, 21 Jun 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[My Fullstack Readme]]></title>
+            <link>https://your-docusaurus-site.example.com/blog/my-fullstack-readme</link>
+            <guid>https://your-docusaurus-site.example.com/blog/my-fullstack-readme</guid>
+            <pubDate>Sun, 21 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Project Overview]]></description>
+            <content:encoded><![CDATA[<p><strong>Project Overview</strong></p>
+<ul>
+<li class=""><strong>Root files</strong>:&nbsp;<a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">README.md</a>: 项目说明与运行/开发指南.&nbsp;<a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">pyproject.toml</a>: Python 项目元信息与依赖管理.</li>
+<li class=""><strong><a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">app</a></strong>: 后端应用主目录（主要代码入口与业务逻辑）。<!-- -->
+<ul>
+<li class=""><strong><a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">main.py</a></strong>: 应用入口（ASGI/FastAPI 实例、包含 router mount 点或启动配置）。</li>
+<li class=""><strong><code>backend_pre_start.py</code>&nbsp;/&nbsp;<code>tests_pre_start.py</code></strong>: 在启动或测试前运行的准备脚本（如等数据库就绪、创建表等）。</li>
+<li class=""><strong><code>initial_data.py</code></strong>: 可选的种子数据脚本，用于初始化数据库示例数据。</li>
+<li class=""><strong><code>models.py</code></strong>: SQLModel（或 ORM）数据模型定义。</li>
+<li class=""><strong><code>crud.py</code></strong>: 与数据库交互的 Create/Read/Update/Delete 操作封装。</li>
+<li class=""><strong><code>utils.py</code></strong>: 通用帮助函数与工具。</li>
+</ul>
+</li>
+<li class=""><strong><a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">api</a></strong>: 路由与 API 层。<!-- -->
+<ul>
+<li class=""><strong><code>api/main.py</code></strong>&nbsp;与&nbsp;<a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">main.py</a>&nbsp;共同负责路由注册（通常&nbsp;<a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">main.py</a>&nbsp;引入并挂载&nbsp;<code>api</code>&nbsp;下的路由）。</li>
+<li class=""><strong><code>api/routes/</code></strong>: 具体路由模块：<code>items.py</code>,&nbsp;<code>login.py</code>,&nbsp;<code>private.py</code>,&nbsp;<code>users.py</code>,&nbsp;<code>utils.py</code>（负责端点与请求/响应处理、依赖注入等）。</li>
+</ul>
+</li>
+<li class=""><strong><a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">core</a></strong>: 核心基础设施与配置。<!-- -->
+<ul>
+<li class=""><strong><code>core/config.py</code></strong>: 配置（环境变量、设置对象）。</li>
+<li class=""><strong><code>core/db.py</code></strong>: 数据库引擎、会话、连接初始化（并可能包含开发时&nbsp;<code>create_all</code>&nbsp;的注释切换）。</li>
+<li class=""><strong><code>core/security.py</code></strong>: 密码哈希、JWT 签名/校验等安全相关逻辑。</li>
+</ul>
+</li>
+<li class=""><strong><a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">email-templates</a></strong>: 邮件模板源文件（MJML）与构建后的 HTML（<code>src/</code>&nbsp;vs&nbsp;<code>build/</code>）。</li>
+<li class=""><strong><code>alembic/</code></strong>: 数据库迁移配置与历史（<code>env.py</code>,&nbsp;<code>versions/</code>&nbsp;下各迁移脚本）。</li>
+<li class=""><strong><a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">scripts</a></strong>: 启动/测试/格式化脚本（<code>test.sh</code>,&nbsp;<code>prestart.sh</code>,&nbsp;<code>tests-start.sh</code>&nbsp;等）。</li>
+<li class=""><strong><a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">tests</a></strong>: Pytest 测试套件（<code>api/</code>,&nbsp;<code>crud/</code>,&nbsp;<code>utils/</code>&nbsp;的单元/集成测试）。</li>
+</ul>
+<p><strong>主要模块职责（摘要）</strong></p>
+<ul>
+<li class=""><strong><code>models.py</code></strong>: 建表字段、关系、索引与模型校验规则。</li>
+<li class=""><strong><code>crud.py</code></strong>: 抽象数据库操作（避免在路由里写原生 SQL/Session 逻辑）。</li>
+<li class=""><strong><a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">main.py</a></strong>: 构建 FastAPI 应用，包含中间件、异常处理、路由挂载与事件（startup/shutdown）。</li>
+<li class=""><strong><code>api/routes/*</code></strong>: 每个文件提供一组相关路由（例如&nbsp;<code>users.py</code>&nbsp;管理用户注册/查询，<code>login.py</code>&nbsp;管理认证 token）。</li>
+<li class=""><strong><code>core/config.py</code></strong>: 把环境设置集中，供应用与测试读取（数据库 URL、密钥、邮件等）。</li>
+<li class=""><strong><code>core/db.py</code></strong>: 创建 SQLModel/SQLAlchemy engine 与 session，提供&nbsp;<code>get_db</code>&nbsp;依赖。</li>
+<li class=""><strong><code>core/security.py</code></strong>: 密码哈希、JWT 生成/解析、权限校验 helper。</li>
+<li class=""><strong><code>alembic/</code></strong>: 自动生成迁移、升级数据库；<code>versions/</code>&nbsp;保存迁移历史。</li>
+<li class=""><strong><code>backend_pre_start.py</code>&nbsp;/&nbsp;<a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">prestart.sh</a></strong>: 启动前工作流（例如先执行&nbsp;<code>alembic upgrade head</code>），容器/CI 会调用。</li>
+<li class=""><strong><a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">tests</a></strong>: 包含测试夹具（<code>conftest.py</code>），通过&nbsp;<code>pytest</code>&nbsp;运行。</li>
+</ul>
+<ul>
+<li class="">本地（使用&nbsp;<code>uv</code>&nbsp;管理依赖/环境）<!-- -->
+<ul>
+<li class="">安装依赖并同步环境：</li>
+</ul>
+</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">uv sync</span><br></div></code></pre></div></div>
+<ul>
+<li class="">激活虚拟环境（Windows PowerShell）：</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">.\.venv\Scripts\Activate.ps1</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">.venv\Scripts\activate</span><br></div></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="后端">后端：<a href="https://your-docusaurus-site.example.com/blog/my-fullstack-readme#%E5%90%8E%E7%AB%AF" class="hash-link" aria-label="Direct link to 后端：" title="Direct link to 后端：" translate="no">​</a></h2>
+<ul>
+<li class="">在激活环境后运行：
+在backend目录下执行：</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">fastapi run --reload app/main.py</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># 或显式 uvicorn（如果可用）</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">uvicorn app.main:app --reload</span><br></div></code></pre></div></div>
+<p>（api文档链接：<a href="http://localhost:8000/docs%EF%BC%89" target="_blank" rel="noopener noreferrer" class="">http://localhost:8000/docs）</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="前端">前端：<a href="https://your-docusaurus-site.example.com/blog/my-fullstack-readme#%E5%89%8D%E7%AB%AF" class="hash-link" aria-label="Direct link to 前端：" title="Direct link to 前端：" translate="no">​</a></h2>
+<p>frontend目录下：
+pnpm install和pnpm dev也启动起来了：<a href="http://localhost:5173/login" target="_blank" rel="noopener noreferrer" class="">http://localhost:5173/login</a></p>
+<h1>该看这里了</h1>
+<ul>
+<li class="">使用 Docker Compose（推荐和 README 描述一致）<!-- -->
+<ul>
+<li class="">启动开发堆栈（<code>compose.override.yml</code>&nbsp;在开发时常被启用）：</li>
+</ul>
+</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">docker compose up --build</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># 或项目提供的便捷命令（如 README 中的 watch）</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">docker compose watch</span><br></div></code></pre></div></div>
+<ul>
+<li class="">进入后端容器交互式 shell：</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">docker compose exec backend bash</span><br></div></code></pre></div></div>
+<ul>
+<li class="">在容器内运行开发服务器（如果你保持容器为“闲置”模式再手动运行）：</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">fastapi run --reload app/main.py</span><br></div></code></pre></div></div>
+<p><strong>运行测试</strong></p>
+<ul>
+<li class="">在本地（激活虚拟环境后）：</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">pytest -q</span><br></div></code></pre></div></div>
+<ul>
+<li class="">在容器中（项目脚本封装好环境检查）：</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">docker compose exec backend bash scripts/tests-start.sh</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain"># 传递 pytest 参数示例</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">docker compose exec backend bash scripts/tests-start.sh -x</span><br></div></code></pre></div></div>
+<ul>
+<li class="">项目也提供&nbsp;<a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">test.sh</a>（Bash 脚本），在类 Unix 环境运行：</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">bash ./scripts/test.sh</span><br></div></code></pre></div></div>
+<p><strong>数据库迁移</strong></p>
+<ul>
+<li class="">生成新迁移（在容器或本地环境，确保能导入&nbsp;<code>app.models</code>）：</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">alembic revision --autogenerate -m "描述变更"</span><br></div></code></pre></div></div>
+<ul>
+<li class="">应用迁移：</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">alembic upgrade head</span><br></div></code></pre></div></div>
+<ul>
+<li class="">注意：<a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">prestart.sh</a>&nbsp;通常会调用&nbsp;<code>alembic upgrade head</code>，容器启动流程里可能已包含此步骤。</li>
+</ul>
+<p><strong>常见快速排查建议</strong></p>
+<ul>
+<li class="">如果启动时报错“无法连接数据库”：先确认&nbsp;<code>.env</code>&nbsp;或配置中的数据库 URL，并确保依赖的服务（Postgres 等）已启动（在 Compose 中检查）。</li>
+<li class="">迁移相关问题：检查&nbsp;<code>alembic/env.py</code>&nbsp;是否正确导入&nbsp;<code>app.models</code>，以及&nbsp;<code>versions/</code>&nbsp;目录是否为预期状态。</li>
+<li class="">依赖问题：使用&nbsp;<code>uv sync</code>&nbsp;后确认&nbsp;<code>python --version</code>&nbsp;与虚拟环境一致，编辑器指向&nbsp;<code>backend/.venv/...</code>&nbsp;的解释器。</li>
+<li class="">如果容器在保存文件后因为语法错误退出：用&nbsp;<code>docker compose watch</code>&nbsp;+&nbsp;<code>docker compose exec backend bash</code>&nbsp;进入容器并手动运行&nbsp;<code>fastapi run --reload</code>&nbsp;来更快修复。</li>
+</ul>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Welcome]]></title>
+            <link>https://your-docusaurus-site.example.com/blog/welcome</link>
+            <guid>https://your-docusaurus-site.example.com/blog/welcome</guid>
+            <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></description>
+            <content:encoded><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer" class="">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer" class="">blog plugin</a>.</p>
+<p>Here are a few tips you might find useful.</p>
+<!-- -->
+<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
+<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
+<p>The blog post date can be extracted from filenames, such as:</p>
+<ul>
+<li class=""><code>2019-05-30-welcome.md</code></li>
+<li class=""><code>2019-05-30-welcome/index.md</code></li>
+</ul>
+<p>A blog post folder can be convenient to co-locate blog post images:</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://your-docusaurus-site.example.com/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
+<p>The blog supports tags as well!</p>
+<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content:encoded>
+            <category>Facebook</category>
+            <category>Hello</category>
+            <category>Docusaurus</category>
+        </item>
+        <item>
+            <title><![CDATA[MDX Blog Post]]></title>
+            <link>https://your-docusaurus-site.example.com/blog/mdx-blog-post</link>
+            <guid>https://your-docusaurus-site.example.com/blog/mdx-blog-post</guid>
+            <pubDate>Sun, 01 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></description>
+            <content:encoded><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer" class="">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer" class="">MDX</a>.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Use the power of React to create interactive blog posts.</p></div></div>
+<!-- -->
+<p>For example, use JSX to create an interactive button:</p>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token operator" style="color:#393A34">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:#393A34">=</span><span class="token punctuation" style="color:#393A34">{</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">alert</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">'button clicked!'</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">}</span><span class="token operator" style="color:#393A34">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:#393A34">!</span><span class="token operator" style="color:#393A34">&lt;</span><span class="token operator" style="color:#393A34">/</span><span class="token plain">button</span><span class="token operator" style="color:#393A34">&gt;</span><br></div></code></pre></div></div>
+<button>Click me!</button>]]></content:encoded>
+            <category>Docusaurus</category>
+        </item>
+        <item>
+            <title><![CDATA[Long Blog Post]]></title>
+            <link>https://your-docusaurus-site.example.com/blog/long-blog-post</link>
+            <guid>https://your-docusaurus-site.example.com/blog/long-blog-post</guid>
+            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is the summary of a very long blog post,]]></description>
+            <content:encoded><![CDATA[<p>This is the summary of a very long blog post,</p>
+<p>Use a <code>{/*</code> <code>truncate</code> <code>*/}</code> comment to limit blog post size in the list view.</p>
+<!-- -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
+            <category>Hello</category>
+            <category>Docusaurus</category>
+        </item>
+        <item>
+            <title><![CDATA[First Blog Post]]></title>
+            <link>https://your-docusaurus-site.example.com/blog/first-blog-post</link>
+            <guid>https://your-docusaurus-site.example.com/blog/first-blog-post</guid>
+            <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Lorem ipsum dolor sit amet...]]></description>
+            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
+<!-- -->
+<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
+            <category>Hola</category>
+            <category>Docusaurus</category>
+        </item>
+    </channel>
+</rss>

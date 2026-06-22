@@ -19,32 +19,36 @@
 date: 2026-06-21<a href="https://violetleewatson.github.io/my-website/blog/docusaurus_conf#title-%E9%80%90%E9%A1%B9%E8%A7%A3%E9%87%8A-docusaurusconfigts-%E4%B8%AD%E7%9A%84%E9%85%8D%E7%BD%AE%E9%A1%B9date-2026-06-21" class="hash-link" aria-label="Direct link to title: &quot;逐项解释 docusaurus.config.ts 中的配置项&quot;
 date: 2026-06-21" title="Direct link to title: &quot;逐项解释 docusaurus.config.ts 中的配置项&quot;
 date: 2026-06-21" translate="no">​</a></h2>
-<p>title: 网站主标题，显示在浏览器标签、导航栏等位置。
-tagline: 站点副标题/口号，用于首页和社交分享卡文案。
-favicon: 浏览器标签的小图标路径（通常放在 static 下）。
-future.v4: 启用 Docusaurus v4 的未来兼容/实验性特性开关。
-url: 网站的主域名（用于生成绝对链接和 Open Graph URL）。
-baseUrl: 部署在域名下的子路径（例如 GitHub Pages 的仓库名，通常以 / 结尾）。
-deploymentBranch: 部署时推送静态文件的分支（默认 gh-pages）；用于 GitHub Pages 部署。
-trailingSlash: 是否在生成的 URL 末尾保留斜杠，false 常用于去掉末尾斜杠。
-organizationName: GitHub 用户或组织名，常用于生成仓库相关链接与部署配置。
-projectName: 仓库名，配合 organizationName 用于部署和生成某些自动链接。
-onBrokenLinks: 断链处理策略（'throw'：构建失败；'warn'：仅提示）。
-i18n.defaultLocale / i18n.locales: 默认语言与可用语言列表，影响 HTML lang、路径前缀和语言切换。
-presets: 预设集合，这里用 'classic'，包含 docs、blog、theme 的默认配置和扩展点。
-presets[classic].docs.sidebarPath: 指向侧边栏配置文件（侧边栏如何组织文档）。
-presets[classic].docs.editUrl: “Edit this page” 链接前缀，建议改为你自己的仓库 URL 以启用编辑链接。
-presets[classic].blog.showReadingTime: 是否在文章中显示预计阅读时间。
-presets[classic].blog.feedOptions: 博客 feed（RSS/Atom）输出配置，例如生成哪些格式。
-presets[classic].blog.onInlineTags / onInlineAuthors / onUntruncatedBlogPosts: 博客内容校验/策略（如发现问题时警告）。
-presets[classic].theme.customCss: 自定义 CSS 路径，用于覆盖或补充默认样式。
-themeConfig.image: 默认的社交分享/卡片图片（Open Graph/Twitter Card）。
-themeConfig.colorMode.respectPrefersColorScheme: 是否尊重用户系统的深色/浅色主题偏好。
-themeConfig.navbar: 导航栏设置（title、logo、items）。items 中可用 type: 'docSidebar'（链接文档侧边栏）、to（站内路由）、href（外部链接）等。
-themeConfig.footer: 页脚配置（style、多列 links、版权文本等）。
-themeConfig.prism.theme / darkTheme: 代码高亮主题，分别用于浅色与深色模式（这里使用 prism-react-renderer 的主题）。
-TypeScript typings: 使用 Config 类型和 satisfies Preset.Options/ThemeConfig 只是为了编辑时的类型检查与自动完成，不改变运行时行为。
-export default config: 导出配置对象，Docusaurus 在构建时读取它来生成站点。</p>]]></content:encoded>
+<p>逐项解释&nbsp;<a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/fcf604774b/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">docusaurus.config.ts</a>&nbsp;中的配置项。</p>
+<p><strong>Config Overview</strong></p>
+<ul>
+<li class=""><strong>title</strong>: 网站主标题，显示在浏览器标签、导航栏等位置。</li>
+<li class=""><strong>tagline</strong>: 站点副标题/口号，用于首页和社交分享卡文案。</li>
+<li class=""><strong>favicon</strong>: 浏览器标签的小图标路径（通常放在&nbsp;<a href="vscode-file://vscode-app/c:/Users/23855/AppData/Local/Programs/Microsoft%20VS%20Code/fcf604774b/resources/app/out/vs/code/electron-browser/workbench/workbench.html" target="_blank" rel="noopener noreferrer" class="">static</a>&nbsp;下）。</li>
+<li class=""><strong>future.v4</strong>: 启用 Docusaurus v4 的未来兼容/实验性特性开关。</li>
+<li class=""><strong>url</strong>: 网站的主域名（用于生成绝对链接和 Open Graph URL）。</li>
+<li class=""><strong>baseUrl</strong>: 部署在域名下的子路径（例如 GitHub Pages 的仓库名，通常以&nbsp;<code>/</code>&nbsp;结尾）。</li>
+<li class=""><strong>deploymentBranch</strong>: 部署时推送静态文件的分支（默认&nbsp;<code>gh-pages</code>）；用于 GitHub Pages 部署。</li>
+<li class=""><strong>trailingSlash</strong>: 是否在生成的 URL 末尾保留斜杠，<code>false</code>&nbsp;常用于去掉末尾斜杠。</li>
+<li class=""><strong>organizationName</strong>: GitHub 用户或组织名，常用于生成仓库相关链接与部署配置。</li>
+<li class=""><strong>projectName</strong>: 仓库名，配合&nbsp;<code>organizationName</code>&nbsp;用于部署和生成某些自动链接。</li>
+<li class=""><strong>onBrokenLinks</strong>: 断链处理策略（<code>'throw'</code>：构建失败；<code>'warn'</code>：仅提示）。</li>
+<li class=""><strong>i18n.defaultLocale / i18n.locales</strong>: 默认语言与可用语言列表，影响 HTML&nbsp;<code>lang</code>、路径前缀和语言切换。</li>
+<li class=""><strong>presets</strong>: 预设集合，这里用&nbsp;<code>'classic'</code>，包含 docs、blog、theme 的默认配置和扩展点。</li>
+<li class=""><strong>presets[classic].docs.sidebarPath</strong>: 指向侧边栏配置文件（侧边栏如何组织文档）。</li>
+<li class=""><strong>presets[classic].docs.editUrl</strong>: “Edit this page” 链接前缀，建议改为你自己的仓库 URL 以启用编辑链接。</li>
+<li class=""><strong>presets[classic].blog.showReadingTime</strong>: 是否在文章中显示预计阅读时间。</li>
+<li class=""><strong>presets[classic].blog.feedOptions</strong>: 博客 feed（RSS/Atom）输出配置，例如生成哪些格式。</li>
+<li class=""><strong>presets[classic].blog.onInlineTags / onInlineAuthors / onUntruncatedBlogPosts</strong>: 博客内容校验/策略（如发现问题时警告）。</li>
+<li class=""><strong>presets[classic].theme.customCss</strong>: 自定义 CSS 路径，用于覆盖或补充默认样式。</li>
+<li class=""><strong>themeConfig.image</strong>: 默认的社交分享/卡片图片（Open Graph/Twitter Card）。</li>
+<li class=""><strong>themeConfig.colorMode.respectPrefersColorScheme</strong>: 是否尊重用户系统的深色/浅色主题偏好。</li>
+<li class=""><strong>themeConfig.navbar</strong>: 导航栏设置（<code>title</code>、<code>logo</code>、<code>items</code>）。<code>items</code>&nbsp;中可用&nbsp;<code>type: 'docSidebar'</code>（链接文档侧边栏）、<code>to</code>（站内路由）、<code>href</code>（外部链接）等。</li>
+<li class=""><strong>themeConfig.footer</strong>: 页脚配置（<code>style</code>、多列&nbsp;<code>links</code>、版权文本等）。</li>
+<li class=""><strong>themeConfig.prism.theme / darkTheme</strong>: 代码高亮主题，分别用于浅色与深色模式（这里使用&nbsp;<code>prism-react-renderer</code>&nbsp;的主题）。</li>
+<li class=""><strong>TypeScript typings</strong>: 使用&nbsp;<code>Config</code>&nbsp;类型和&nbsp;<code>satisfies Preset.Options/ThemeConfig</code>&nbsp;只是为了编辑时的类型检查与自动完成，不改变运行时行为。</li>
+<li class=""><strong>export default config</strong>: 导出配置对象，Docusaurus 在构建时读取它来生成站点。</li>
+</ul>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[本地启动docker-compose]]></title>

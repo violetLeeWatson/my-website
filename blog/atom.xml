@@ -2,11 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://violetleewatson.github.io/my-website/blog</id>
     <title>My Site Blog</title>
-    <updated>2026-06-22T00:00:00.000Z</updated>
+    <updated>2026-06-22T13:37:30.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://violetleewatson.github.io/my-website/blog"/>
     <subtitle>My Site Blog</subtitle>
     <icon>https://violetleewatson.github.io/my-website/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[docusaurus_conf]]></title>
+        <id>https://violetleewatson.github.io/my-website/blog/docusaurus_conf</id>
+        <link href="https://violetleewatson.github.io/my-website/blog/docusaurus_conf"/>
+        <updated>2026-06-22T13:37:30.000Z</updated>
+        <summary type="html"><![CDATA[---]]></summary>
+        <content type="html"><![CDATA[<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="title-逐项解释-docusaurusconfigts-中的配置项date-2026-06-21">title: "逐项解释 docusaurus.config.ts 中的配置项"
+date: 2026-06-21<a href="https://violetleewatson.github.io/my-website/blog/docusaurus_conf#title-%E9%80%90%E9%A1%B9%E8%A7%A3%E9%87%8A-docusaurusconfigts-%E4%B8%AD%E7%9A%84%E9%85%8D%E7%BD%AE%E9%A1%B9date-2026-06-21" class="hash-link" aria-label="Direct link to title: &quot;逐项解释 docusaurus.config.ts 中的配置项&quot;
+date: 2026-06-21" title="Direct link to title: &quot;逐项解释 docusaurus.config.ts 中的配置项&quot;
+date: 2026-06-21" translate="no">​</a></h2>
+<p>title: 网站主标题，显示在浏览器标签、导航栏等位置。
+tagline: 站点副标题/口号，用于首页和社交分享卡文案。
+favicon: 浏览器标签的小图标路径（通常放在 static 下）。
+future.v4: 启用 Docusaurus v4 的未来兼容/实验性特性开关。
+url: 网站的主域名（用于生成绝对链接和 Open Graph URL）。
+baseUrl: 部署在域名下的子路径（例如 GitHub Pages 的仓库名，通常以 / 结尾）。
+deploymentBranch: 部署时推送静态文件的分支（默认 gh-pages）；用于 GitHub Pages 部署。
+trailingSlash: 是否在生成的 URL 末尾保留斜杠，false 常用于去掉末尾斜杠。
+organizationName: GitHub 用户或组织名，常用于生成仓库相关链接与部署配置。
+projectName: 仓库名，配合 organizationName 用于部署和生成某些自动链接。
+onBrokenLinks: 断链处理策略（'throw'：构建失败；'warn'：仅提示）。
+i18n.defaultLocale / i18n.locales: 默认语言与可用语言列表，影响 HTML lang、路径前缀和语言切换。
+presets: 预设集合，这里用 'classic'，包含 docs、blog、theme 的默认配置和扩展点。
+presets[classic].docs.sidebarPath: 指向侧边栏配置文件（侧边栏如何组织文档）。
+presets[classic].docs.editUrl: “Edit this page” 链接前缀，建议改为你自己的仓库 URL 以启用编辑链接。
+presets[classic].blog.showReadingTime: 是否在文章中显示预计阅读时间。
+presets[classic].blog.feedOptions: 博客 feed（RSS/Atom）输出配置，例如生成哪些格式。
+presets[classic].blog.onInlineTags / onInlineAuthors / onUntruncatedBlogPosts: 博客内容校验/策略（如发现问题时警告）。
+presets[classic].theme.customCss: 自定义 CSS 路径，用于覆盖或补充默认样式。
+themeConfig.image: 默认的社交分享/卡片图片（Open Graph/Twitter Card）。
+themeConfig.colorMode.respectPrefersColorScheme: 是否尊重用户系统的深色/浅色主题偏好。
+themeConfig.navbar: 导航栏设置（title、logo、items）。items 中可用 type: 'docSidebar'（链接文档侧边栏）、to（站内路由）、href（外部链接）等。
+themeConfig.footer: 页脚配置（style、多列 links、版权文本等）。
+themeConfig.prism.theme / darkTheme: 代码高亮主题，分别用于浅色与深色模式（这里使用 prism-react-renderer 的主题）。
+TypeScript typings: 使用 Config 类型和 satisfies Preset.Options/ThemeConfig 只是为了编辑时的类型检查与自动完成，不改变运行时行为。
+export default config: 导出配置对象，Docusaurus 在构建时读取它来生成站点。</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[本地启动docker-compose]]></title>
         <id>https://violetleewatson.github.io/my-website/blog/docker-compose</id>
@@ -361,38 +399,6 @@ pnpm install和pnpm dev也启动起来了：<a href="http://localhost:5173/login
 </ul>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Welcome]]></title>
-        <id>https://violetleewatson.github.io/my-website/blog/welcome</id>
-        <link href="https://violetleewatson.github.io/my-website/blog/welcome"/>
-        <updated>2021-08-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer" class="">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer" class="">blog plugin</a>.</p>
-<p>Here are a few tips you might find useful.</p>
-<!-- -->
-<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
-<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
-<p>The blog post date can be extracted from filenames, such as:</p>
-<ul>
-<li class=""><code>2019-05-30-welcome.md</code></li>
-<li class=""><code>2019-05-30-welcome/index.md</code></li>
-</ul>
-<p>A blog post folder can be convenient to co-locate blog post images:</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://violetleewatson.github.io/my-website/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
-<p>The blog supports tags as well!</p>
-<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
-        <author>
-            <name>Sébastien Lorber</name>
-            <uri>https://sebastienlorber.com</uri>
-        </author>
-        <author>
-            <name>Yangshun Tay</name>
-            <uri>https://linkedin.com/in/yangshun</uri>
-        </author>
-        <category label="Facebook" term="Facebook"/>
-        <category label="Hello" term="Hello"/>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[MDX Blog Post]]></title>
         <id>https://violetleewatson.github.io/my-website/blog/mdx-blog-post</id>
         <link href="https://violetleewatson.github.io/my-website/blog/mdx-blog-post"/>
@@ -408,58 +414,6 @@ pnpm install和pnpm dev也启动起来了：<a href="http://localhost:5173/login
             <name>Sébastien Lorber</name>
             <uri>https://sebastienlorber.com</uri>
         </author>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Long Blog Post]]></title>
-        <id>https://violetleewatson.github.io/my-website/blog/long-blog-post</id>
-        <link href="https://violetleewatson.github.io/my-website/blog/long-blog-post"/>
-        <updated>2019-05-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
-        <content type="html"><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>{/*</code> <code>truncate</code> <code>*/}</code> comment to limit blog post size in the list view.</p>
-<!-- -->
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Yangshun Tay</name>
-            <uri>https://linkedin.com/in/yangshun</uri>
-        </author>
-        <category label="Hello" term="Hello"/>
-        <category label="Docusaurus" term="Docusaurus"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First Blog Post]]></title>
-        <id>https://violetleewatson.github.io/my-website/blog/first-blog-post</id>
-        <link href="https://violetleewatson.github.io/my-website/blog/first-blog-post"/>
-        <updated>2019-05-28T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet...]]></summary>
-        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<!-- -->
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Sébastien Lorber</name>
-            <uri>https://sebastienlorber.com</uri>
-        </author>
-        <author>
-            <name>Yangshun Tay</name>
-            <uri>https://linkedin.com/in/yangshun</uri>
-        </author>
-        <category label="Hola" term="Hola"/>
         <category label="Docusaurus" term="Docusaurus"/>
     </entry>
 </feed>

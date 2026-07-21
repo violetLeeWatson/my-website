@@ -1,0 +1,323 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-fullsatck/frontend-routes" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>前端路由相关 | My Site</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://violetleewatson.github.io/my-website/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://violetleewatson.github.io/my-website/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://violetleewatson.github.io/my-website/docs/fullsatck/frontend-routes /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="前端路由相关 | My Site"/><meta data-rh=true name=description content=前端路由相关 /><meta data-rh=true property=og:description content=前端路由相关 /><link data-rh=true rel=icon href=/my-website/img/favicon.ico /><link data-rh=true rel=canonical href=https://violetleewatson.github.io/my-website/docs/fullsatck/frontend-routes /><link data-rh=true rel=alternate href=https://violetleewatson.github.io/my-website/docs/fullsatck/frontend-routes hreflang=en /><link data-rh=true rel=alternate href=https://violetleewatson.github.io/my-website/docs/fullsatck/frontend-routes hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://violetleewatson.github.io/my-website/docs/category/全栈项目入门","name":"全栈项目入门","position":1},{"@type":"ListItem","item":"https://violetleewatson.github.io/my-website/docs/fullsatck/frontend-routes","name":"前端路由相关","position":2}]}</script><link rel=alternate type=application/rss+xml href=/my-website/blog/rss.xml title="My Site RSS Feed"><link rel=alternate type=application/atom+xml href=/my-website/blog/atom.xml title="My Site Atom Feed"><link rel=stylesheet href=/my-website/assets/css/styles.5b0e4cfb.css /><script src=/my-website/assets/js/runtime~main.2e0c96d3.js defer></script><script src=/my-website/assets/js/main.9ec756c6.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-723")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/my-website/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/my-website/><div class=navbar__logo><img src=/my-website/img/logo.svg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/my-website/img/logo.svg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/my-website/docs/intro>Tutorial</a><a class="navbar__item navbar__link" href=/my-website/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/facebook/docusaurus target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/my-website/docs/intro><span title="Tutorial Intro" class=linkLabel_WmDU>Tutorial Intro</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/my-website/docs/category/docker相关><span title=docker相关 class=categoryLinkLabel_W154>docker相关</span></a><button aria-label="Expand sidebar category 'docker相关'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/my-website/docs/category/全栈项目入门><span title=全栈项目入门 class=categoryLinkLabel_W154>全栈项目入门</span></a><button aria-label="Collapse sidebar category '全栈项目入门'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/my-website/docs/fullsatck/docker_local_run><span title="my-full-stack项目 本地启docker" class=linkLabel_WmDU>my-full-stack项目 本地启docker</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/my-website/docs/fullsatck/explain><span title="为什么要先用docker compose -f compose.yml -f compose.override.yml build frontend playwright，这个命令是干什么的？" class=linkLabel_WmDU>为什么要先用docker compose -f compose.yml -f compose.override.yml build frontend playwright，这个命令是干什么的？</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/my-website/docs/fullsatck/frontend-routes><span title=前端路由相关 class=linkLabel_WmDU>前端路由相关</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/my-website/docs/fullsatck/how_to_update><span title=做一个简单需求 class=linkLabel_WmDU>做一个简单需求</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/my-website/docs/fullsatck/my-fullstack-readme><span title="My Fullstack Readme" class=linkLabel_WmDU>My Fullstack Readme</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/my-website/docs/DB/basic_grammer><span title=DB class=categoryLinkLabel_W154>DB</span></a></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false href=/my-website/docs/fastapi/SQLAlchemy/good_tool><span title=fastapi class=categoryLinkLabel_W154>fastapi</span></a></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/my-website/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/my-website/docs/category/全栈项目入门><span>全栈项目入门</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>前端路由相关</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>前端路由相关</h1></header><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=前端路由相关>前端路由相关<a href=#前端路由相关 class=hash-link aria-label="Direct link to 前端路由相关" title="Direct link to 前端路由相关" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=frontendsrcroutes>frontend/src/routes<a href=#frontendsrcroutes class=hash-link aria-label="Direct link to frontend/src/routes" title="Direct link to frontend/src/routes" translate=no>​</a></h3>
+<p>这个文件夹里是该项目的前端路由，详细解释一下里面的每个文件是干什么用的。我想给刚刚的一级菜单加一个路由，应该修改哪？</p>
+<p>我先查看这个路由目录里的文件结构和入口关系，然后把每个文件的作用串起来说明。
+我已经看到主路由入口，正在把布局路由和子页面路由对应起来，便于你判断该改哪里。
+这个目录里的文件，基本上就是项目的前端“路由定义文件”。它们共同组成了页面跳转关系。</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-各文件的作用>1. 各文件的作用<a href=#1-各文件的作用 class=hash-link aria-label="Direct link to 1. 各文件的作用" title="Direct link to 1. 各文件的作用" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>__root.tsx</strong>
+整个项目的根路由。
+负责挂载最外层的页面内容，并提供 404/错误展示。</li>
+<li class=""><strong>_layout.tsx</strong>
+登录后的主布局路由。
+这里会把左侧侧边栏、顶部 header、主内容区一起包起来。
+还有一个关键逻辑：如果用户没登录，会自动跳到登录页。</li>
+<li class=""><strong>index.tsx</strong>
+对应首页 Dashboard。
+访问路径就是 "/"。</li>
+<li class=""><strong>items.tsx</strong>
+对应左侧菜单里的 “Items” 页面。
+负责展示列表和新增 item 的页面逻辑。</li>
+<li class=""><strong>admin.tsx</strong>
+对应 “Admin” 页面。
+这里还做了权限判断，只有超级管理员才能进。</li>
+<li class=""><strong>settings.tsx</strong>
+对应 “Settings” 页面。
+负责用户设置相关的标签页内容。</li>
+<li class=""><strong>login.tsx</strong>
+登录页。
+访问路径是 "/login"。</li>
+<li class=""><strong>signup.tsx</strong>
+注册页。
+访问路径是 "/signup"。</li>
+<li class=""><strong>recover-password.tsx</strong>
+找回密码页。
+访问路径是 "/recover-password"。</li>
+<li class=""><strong>reset-password.tsx</strong>
+重置密码页。
+访问路径是 "/reset-password"。</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-你现在要给一级菜单加路由应该改哪里>2. 你现在要给一级菜单加路由，应该改哪里<a href=#2-你现在要给一级菜单加路由应该改哪里 class=hash-link aria-label="Direct link to 2. 你现在要给一级菜单加路由，应该改哪里" title="Direct link to 2. 你现在要给一级菜单加路由，应该改哪里" translate=no>​</a></h4>
+<p>如果你是想给左侧菜单新增一个一级菜单，并且点击后能跳转到一个新页面，通常需要改两处：</p>
+<ol>
+<li class=""><strong>先改菜单定义</strong>
+文件是 <code>AppSidebar.tsx</code>
+这里定义了左侧菜单项，比如 Dashboard、Items、Admin。</li>
+<li class=""><strong>再加对应的路由文件</strong>
+对于登录后侧边栏里的菜单，应该在 <code>_layout</code> 下面新增一个路由文件。
+例如你想加一个 “Chat” 菜单，路径是 "/chat"，那么通常要新建：
+<code>frontend/src/routes/_layout/chat.tsx</code>
+代码结构大致是：<!-- -->
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token keyword module" style=color:#00009f>import</span><span class="token plain"> </span><span class="token imports punctuation" style=color:#393A34>{</span><span class="token imports"> createFileRoute </span><span class="token imports punctuation" style=color:#393A34>}</span><span class="token plain"> </span><span class="token keyword module" style=color:#00009f>from</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"@tanstack/react-router"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword module" style=color:#00009f>export</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>const</span><span class="token plain"> </span><span class="token maybe-class-name">Route</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>createFileRoute</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"/_layout/chat"</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  </span><span class="token literal-property property" style=color:#36acaa>component</span><span class="token operator" style=color:#393A34>:</span><span class="token plain"> </span><span class="token maybe-class-name">ChatPage</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token keyword" style=color:#00009f>function</span><span class="token plain"> </span><span class="token function maybe-class-name" style=color:#d73a49>ChatPage</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">  </span><span class="token keyword control-flow" style=color:#00009f>return</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>&lt;</span><span class="token plain">div</span><span class="token operator" style=color:#393A34>></span><span class="token maybe-class-name">Chat</span><span class="token plain"> </span><span class="token maybe-class-name">Page</span><span class="token operator" style=color:#393A34>&lt;</span><span class="token operator" style=color:#393A34>/</span><span class="token plain">div</span><span class="token operator" style=color:#393A34>></span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></div></code></pre></div></div>
+</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-最关键的一点>3. 最关键的一点<a href=#3-最关键的一点 class=hash-link aria-label="Direct link to 3. 最关键的一点" title="Direct link to 3. 最关键的一点" translate=no>​</a></h4>
+<p>这项目里，侧边栏菜单的路径和路由文件是“配套”的关系：
+菜单项里写了 <code>path: "/chat"</code>
+那么对应的路由文件要定义成 <code>createFileRoute("/_layout/chat")</code>
+因为 <code>_layout.tsx</code> 是登录后布局的父路由，所以子路由都会挂在它下面。</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-结论>4. 结论<a href=#4-结论 class=hash-link aria-label="Direct link to 4. 结论" title="Direct link to 4. 结论" translate=no>​</a></h4>
+<p>如果你要“新增一级菜单并能跳转”，最应该修改的地方是：</p>
+<ul>
+<li class=""><strong>菜单显示：</strong> <code>AppSidebar.tsx</code></li>
+<li class=""><strong>页面路由：</strong> <code>_layout</code></li>
+</ul>
+<p>如果你愿意，我可以下一步直接帮你把这个 “Chat” 菜单对应的路由文件补好.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=我看到_layout出现在路由路径里但页面实际显示时只有_layout后面的部分是为什么>我看到_layout出现在路由路径里，但页面实际显示时只有_layout后面的部分，是为什么？<a href=#我看到_layout出现在路由路径里但页面实际显示时只有_layout后面的部分是为什么 class=hash-link aria-label="Direct link to 我看到_layout出现在路由路径里，但页面实际显示时只有_layout后面的部分，是为什么？" title="Direct link to 我看到_layout出现在路由路径里，但页面实际显示时只有_layout后面的部分，是为什么？" translate=no>​</a></h3>
+<p>I'll解释为什么 URL 不显示 _layout，并说明如何改变行为。</p>
+<p><strong>原因概述：</strong>_layout 只是路由文件夹/父路由的名字（用于组织与嵌套），不是 URL 的一部分。子路由在注册时是作为 _layout 的子级挂载到页面上，浏览器地址只显示子路由路径段（例如 /chat），而 _layout 的组件负责包裹并在其内部渲染子页面内容（通过 Outlet）。</p>
+<p><strong>关键点（对应代码位置）：</strong></p>
+<ul>
+<li class=""><strong>父布局路由：</strong><code>_layout.tsx:1</code> —— 通过 <code>createFileRoute("/_layout") / component: Layout</code> 提供侧栏、header 等并包含 <code>&lt;Outlet /></code>。</li>
+<li class="">**子路由文件：**例如 <code>chat.tsx:1</code>（你刚添加的）通过 <code>createFileRoute("/_layout/chat")</code> 注册为子路由，其最终 URL 为 <code>/chat</code>（不含 _layout 前缀）。</li>
+<li class=""><strong>首页示例：</strong><code>index.tsx:1</code> 使用 <code>createFileRoute("/_layout/")</code> 对应根路径 <code>/</code>。</li>
+</ul>
+<p><strong>为什么页面只显示 _layout 后面的部分：</strong>
+Layout 渲染固定壳（侧栏、页眉等），<code>&lt;Outlet /></code> 只渲染当前被匹配的子路由组件，因此你看到的主内容就是子路由（比如 Chat）的渲染结果。</p>
+<p><strong>如果你想让 URL 包含某个前缀：</strong>
+修改路由注册的路径或文件名。例如把子路由改成 <code>createFileRoute("/prefix/chat")</code>（并相应调整父路由），或者重命名目录使文件路径映射到你想要的 URL。注意这会影响路由树和可能需要同步更新侧边栏 path。</p>
+<p>**小结：**正常行为 —— _layout 是布局父节点，子页面路径显示为其后部分；若要改变 URL，需要修改 <code>createFileRoute</code> 的路径定义或路由目录结构。需要我帮你把某个子路由改成带前缀的路径吗？</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=如果想做二级目录路由文件应该怎么改以在items页面的表格的最后一列前加一个action操作列操作列是一个按钮点击跳转到一个新的页面detail要怎么操作>如果想做二级目录，路由文件应该怎么改？以在items页面的表格的最后一列前加一个action操作列，操作列是一个按钮，点击跳转到一个新的页面detail要怎么操作？<a href=#如果想做二级目录路由文件应该怎么改以在items页面的表格的最后一列前加一个action操作列操作列是一个按钮点击跳转到一个新的页面detail要怎么操作 class=hash-link aria-label="Direct link to 如果想做二级目录，路由文件应该怎么改？以在items页面的表格的最后一列前加一个action操作列，操作列是一个按钮，点击跳转到一个新的页面detail要怎么操作？" title="Direct link to 如果想做二级目录，路由文件应该怎么改？以在items页面的表格的最后一列前加一个action操作列，操作列是一个按钮，点击跳转到一个新的页面detail要怎么操作？" translate=no>​</a></h3>
+<p>现在我将：1) 在 _layout/items 下添加动态 detail 路由文件；2) 在 columns.tsx 增加一个“Detail”操作列并链接到该路由。随后我会验证文件已创建并更新TODO。</p>
+<p>I'll mark verification complete in the todo list.</p>
+<p>已完成修改，说明如下：</p>
+<p><strong>我做了什么</strong></p>
+<ul>
+<li class=""><strong>新增路由文件：</strong> <code>$id.tsx:1</code> — 定义了动态路由 <code>createFileRoute("/_layout/items/$id")</code>，对应最终 URL 为 <code>/items/:id</code>，页面会在 Layout 的 <code>&lt;Outlet /></code> 中渲染。</li>
+<li class="">**添加操作列：**更新了 <code>columns.tsx:1-3</code>，在表格的最后一列前加入了一个 “Detail” 按钮列，点击会导航到 <code>/items/{id}</code>。</li>
+</ul>
+<p><strong>如何工作（要点）</strong></p>
+<ul>
+<li class="">
+<p>路由字符串 <code>"/_layout/items/$id"</code> 的 _layout 部分是父布局，不会出现在浏览器地址栏；最终 URL 是 <code>/items/&lt;id></code>。</p>
+</li>
+<li class="">
+<p>表格中使用了 <code>RouterLink</code>，示例：</p>
+<div class="language-tsx codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-tsx codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag class-name" style=color:#00009f>RouterLink</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>to</span><span class="token tag script language-javascript script-punctuation punctuation" style=color:#393A34>=</span><span class="token tag script language-javascript punctuation" style=color:#393A34>{</span><span class="token tag script language-javascript template-string template-punctuation string" style=color:#e3116c>`</span><span class="token tag script language-javascript template-string string" style=color:#e3116c>/items/</span><span class="token tag script language-javascript template-string interpolation interpolation-punctuation punctuation" style=color:#393A34>${</span><span class="token tag script language-javascript template-string interpolation" style=color:#00009f>row</span><span class="token tag script language-javascript template-string interpolation punctuation" style=color:#393A34>.</span><span class="token tag script language-javascript template-string interpolation" style=color:#00009f>original</span><span class="token tag script language-javascript template-string interpolation punctuation" style=color:#393A34>.</span><span class="token tag script language-javascript template-string interpolation" style=color:#00009f>id</span><span class="token tag script language-javascript template-string interpolation interpolation-punctuation punctuation" style=color:#393A34>}</span><span class="token tag script language-javascript template-string template-punctuation string" style=color:#e3116c>`</span><span class="token tag script language-javascript punctuation" style=color:#393A34>}</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain-text">  </span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag class-name" style=color:#00009f>Button</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text">Detail</span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag class-name" style=color:#00009f>Button</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain-text"></span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag class-name" style=color:#00009f>RouterLink</span><span class="token tag punctuation" style=color:#393A34>></span><br/></div></code></pre></div></div>
+<p>这会由 TanStack Router 做客户端导航并渲染新路由。</p>
+</li>
+</ul>
+<p><strong>如果你想改成“二级目录”样式（例如 /items/detail/<!-- -->:id<!-- -->）</strong>
+把路由文件的 <code>createFileRoute</code> 路径改为 <code>"/_layout/items/detail/$id"</code>（并把文件名/位置随意放到 _layout/items/ 下），同时把表格里的链接改为 <code>/items/detail/${id}</code>。
+我也可以替你修改（如果你希望采用该路径格式）。</p>
+<p><strong>测试方法（本地预览）</strong>
+启动前端开发服务器（项目根或 frontend 有对应脚本，例如 <code>pnpm dev / npm run dev</code>），然后登录并打开 Items 页面，点击表格中新增的 Detail 按钮应跳到相应详情页（地址栏 <code>/items/&lt;id></code>）。</p>
+<p>还要我把详情页填充成真实数据（请求 API 显示条目详情）或把路径改为 <code>/items/detail/:id</code> 吗？</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=是因为从items页面跳转到detail页所以在_layout文件夹中新建了items文件夹再建立动态路由文件吗>是因为从items页面跳转到detail页，所以在_layout文件夹中新建了items文件夹，再建立动态路由文件吗<a href=#是因为从items页面跳转到detail页所以在_layout文件夹中新建了items文件夹再建立动态路由文件吗 class=hash-link aria-label="Direct link to 是因为从items页面跳转到detail页，所以在_layout文件夹中新建了items文件夹，再建立动态路由文件吗" title="Direct link to 是因为从items页面跳转到detail页，所以在_layout文件夹中新建了items文件夹，再建立动态路由文件吗" translate=no>​</a></h4>
+<p>I'll说明为什么要在 _layout/items/$id.tsx 下建立动态路由，以及文件/路径的对应关系。</p>
+<p>是的，正因为从 items 页面跳到 detail 页面，你需要在 _layout 下为 items 建子路由文件夹并添加动态路由文件，原因和细节：</p>
+<p><strong>为什么放在 /_layout/items 下</strong>
+<code>/_layout</code> 是登录后共享的父布局（侧栏、header 和 <code>&lt;Outlet /></code>），把页面放在 <code>frontend/src/routes/_layout/...</code> 下可以让这些页面被该布局包裹并在 Outlet 中渲染。
+因此 items 的子页（detail）应作为 <code>/layout</code> 的子路由存在，这就是把文件放在 items 的原因。</p>
+<p><strong>为什么用动态路由文件 $id.tsx（或 /$id）</strong>
+我们创建了 <code>frontend/src/routes/_layout/items/$id.tsx</code> 并在文件中用 <code>createFileRoute("/_layout/items/$id")</code>，这会注册一个匹配 <code>/items/:id</code> 的路由（浏览器地址为 <code>/items/&lt;id></code>）。
+文件名中带 $id 只是文件命名习惯来表示这是个动态段，实际由 <code>createFileRoute</code> 的路径决定，并且可在组件里用 <code>Route.useParams()</code> 取 id。</p>
+<p><strong>行为总结</strong>
+点击 Items 表格里的按钮会导航到 <code>/items/{id}</code>，TanStack Router 匹配到 <code>/_layout/items/$id</code> 路由，先渲染 <code>/_layout</code> 的布局壳，再在 <code>&lt;Outlet /></code> 渲染 ItemDetail 组件，所以地址栏显示的是子路由 <code>/items/{id}</code>（不显示 _layout）。</p>
+<p><strong>如果你想改 URL 结构（例如 /items/detail/<!-- -->:id<!-- -->）</strong>
+把路由注册改为 <code>createFileRoute("/_layout/items/detail/$id")</code>（同时可放在 <code>frontend/src/routes/_layout/items/detail/$id.tsx</code>），并把链接改为 <code>/items/detail/${id}</code> 即可。
+需要我把当前的 detail 路由改成 <code>/items/detail/:id</code> 并同时更新表格里的链接吗？</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=为什么不直接在layout文件夹下新建idtsx路由文件呢>为什么不直接在layout文件夹下新建$id.tsx路由文件呢<a href=#为什么不直接在layout文件夹下新建idtsx路由文件呢 class=hash-link aria-label="Direct link to 为什么不直接在layout文件夹下新建$id.tsx路由文件呢" title="Direct link to 为什么不直接在layout文件夹下新建$id.tsx路由文件呢" translate=no>​</a></h4>
+<p>I'll解释把动态路由放在子目录和直接放在 _layout 的区别与利弊。</p>
+<p>**简短结论：**可以放，但通常不应该把 <code>\$id.tsx</code> 直接放在 <code>\_layout</code> 下，原因是命名空间、URL 语义与路由冲突风险。</p>
+<p><strong>要点说明（简明）：</strong></p>
+<ul>
+<li class="">路由由你在 <code>createFileRoute(...)</code> 里写的路径决定，不是文件名强制决定。例：<!-- -->
+<ul>
+<li class=""><code>createFileRoute("/_layout/items/$id")</code> → 最终 URL 为 <code>/items/:id</code>。</li>
+<li class=""><code>createFileRoute("/_layout/$id")</code> → 最终 URL 为 <code>/:id</code>（顶层动态段）。</li>
+</ul>
+</li>
+<li class="">如果把动态文件直接放在 <code>\_layout/$id.tsx</code>：<!-- -->
+<ul>
+<li class="">要么你写 <code>createFileRoute("/_layout/$id")</code>，那会把所有顶层路径尝试匹配为动态 id，极易与 <code>/login</code>, <code>/signup</code>, <code>/items</code> 等静态路由冲突并导致路由匹配错误。</li>
+<li class="">要么你仍写 <code>createFileRoute("/_layout/items/$id")</code>，那文件放哪都能工作，但把实现和 URL 结构分离会让代码可读性和维护性变差（不直观）。</li>
+</ul>
+</li>
+<li class=""><strong>可读性与组织性：</strong>
+把 items 相关的路由放在 items 下，文件结构就反映 URL 结构，查找和权限控制都更清晰。</li>
+<li class=""><strong>访问控制/嵌套布局：</strong>
+子路由放在 <code>/layout/items/</code> 可以更自然地对该分组做前置校验或共享子布局（若需要），而不是污染父 <code>/_layout</code> 的路由表。</li>
+<li class=""><strong>什么时候可以直接放在 _layout：</strong>
+你真的需要一个顶层动态路由（例如像 <code>/profile/:username</code> 且你想把所有用户页面放顶层），并且能确保不与现有静态路由冲突时可以。但这一般只用于明确的顶层资源，不适合每个实体的详情页。</li>
+<li class=""><strong>举例建议：</strong>
+<ul>
+<li class="">想要 <code>/items/:id</code> → 放 <code>frontend/src/routes/_layout/items/$id.tsx</code>（当前做法，推荐）。</li>
+<li class="">想要 <code>/items/detail/:id</code> → 放 <code>frontend/src/routes/_layout/items/detail/$id.tsx</code> 并 <code>createFileRoute("/_layout/items/detail/$id")</code>。</li>
+<li class="">不要把所有实体的 <code>\$id</code> 都放在 <code>/layout</code>，会导致路由洪水和冲突。</li>
+</ul>
+</li>
+</ul>
+<p>要我把当前 items 的 detail 改成 <code>/items/detail/:id</code> 吗？</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=如果我想在一级目录admin下增加一层二级目录就还在主页的左侧的目录里点击admin会出现两个二级目录第一个就是现在的admin的内容第二个叫minda这一顿话路由文件应该怎么改>如果我想在一级目录admin下增加一层二级目录，就还在主页的左侧的目录里，点击admin会出现两个二级目录，第一个就是现在的admin的内容，第二个叫minda，这一顿话路由文件应该怎么改？<a href=#如果我想在一级目录admin下增加一层二级目录就还在主页的左侧的目录里点击admin会出现两个二级目录第一个就是现在的admin的内容第二个叫minda这一顿话路由文件应该怎么改 class=hash-link aria-label="Direct link to 如果我想在一级目录admin下增加一层二级目录，就还在主页的左侧的目录里，点击admin会出现两个二级目录，第一个就是现在的admin的内容，第二个叫minda，这一顿话路由文件应该怎么改？" title="Direct link to 如果我想在一级目录admin下增加一层二级目录，就还在主页的左侧的目录里，点击admin会出现两个二级目录，第一个就是现在的admin的内容，第二个叫minda，这一顿话路由文件应该怎么改？" translate=no>​</a></h3>
+<p>可以的，下面是改动与理由概述：</p>
+<p><strong>我做了什么（高层）</strong></p>
+<ul>
+<li class="">把原来的平级 <code>admin.tsx</code> 拆为子路由目录 <code>admin</code>：<!-- -->
+<ul>
+<li class=""><code>index.tsx</code> —— 原 Admin 列表页（对应 URL <code>/admin</code>）</li>
+<li class=""><code>minda.tsx</code> —— 新增的二级页（对应 URL <code>/admin/minda</code>）</li>
+</ul>
+</li>
+<li class="">更新了侧边栏 <code>AppSidebar.tsx</code>：<!-- -->
+<ul>
+<li class="">不再把 Admin 当作单一顶部菜单项，</li>
+<li class="">在侧边栏中为超级管理员渲染一个 <code>SidebarGroup</code>，包含两个子菜单项：Admin（指向 <code>/admin</code>）和 Minda（指向 <code>/admin/minda</code>）。</li>
+</ul>
+</li>
+</ul>
+<p><strong>为什么这样做</strong></p>
+<ul>
+<li class="">把 admin 相关页面放到 <code>/_layout/admin/</code> 下能清晰映射 URL 结构（<code>/admin</code> 与 <code>/admin/minda</code>），便于维护和扩展。</li>
+<li class="">在侧边栏显示二级目录需要在侧栏组件中渲染一个分组（<code>SidebarGroup + SidebarMenuItem</code>），这比仅靠路由文件改动更直观且易于控制显示（例如权限逻辑）。</li>
+</ul>
+<p><strong>文件更改清单</strong></p>
+<ul>
+<li class="">新增：<code>index.tsx</code></li>
+<li class="">新增：<code>minda.tsx</code></li>
+<li class="">删除：<code>frontend/src/routes/_layout/admin.tsx</code>（已迁移为 <code>index.tsx</code>）</li>
+<li class="">修改：<code>AppSidebar.tsx</code>（将 Admin 替换为有两个子项的分组）</li>
+</ul>
+<p><strong>TODOs</strong> 已更新并执行。</p>
+<p><strong>下一步 & 可选</strong></p>
+<ul>
+<li class="">如果你想把 minda 做成 Admin 下的另一个嵌套布局（比如有共享的子侧边栏），我们可以为 admin 加一个子 Layout（同 <code>/layout</code> 的做法），再把 index 与 minda 作为该子 Layout 的子路由。</li>
+<li class="">当前 minda 是静态占位页；需要我把它接上后端数据或做权限校验（像 <code>index.tsx</code> 那样）吗？</li>
+<li class="">要我现在把 minda 页面填充数据或改为 <code>/admin/minda/detail/:id</code> 这类更深层次的嵌套吗</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=--如果你想把-minda-做成-admin-下的另一个嵌套布局比如有共享的子侧边栏我们可以为-admin-加一个子-layout同-_layout-的做法再把-index-与-minda-作为该子-layout-的子路由这个和现在的区别是什么>“- 如果你想把 minda 做成 Admin 下的另一个嵌套布局（比如有共享的子侧边栏），我们可以为 admin 加一个子 Layout（同 /_layout 的做法），再把 index 与 minda 作为该子 Layout 的子路由。”这个和现在的区别是什么<a href=#--如果你想把-minda-做成-admin-下的另一个嵌套布局比如有共享的子侧边栏我们可以为-admin-加一个子-layout同-_layout-的做法再把-index-与-minda-作为该子-layout-的子路由这个和现在的区别是什么 class=hash-link aria-label="Direct link to “- 如果你想把 minda 做成 Admin 下的另一个嵌套布局（比如有共享的子侧边栏），我们可以为 admin 加一个子 Layout（同 /_layout 的做法），再把 index 与 minda 作为该子 Layout 的子路由。”这个和现在的区别是什么" title="Direct link to “- 如果你想把 minda 做成 Admin 下的另一个嵌套布局（比如有共享的子侧边栏），我们可以为 admin 加一个子 Layout（同 /_layout 的做法），再把 index 与 minda 作为该子 Layout 的子路由。”这个和现在的区别是什么" translate=no>​</a></h4>
+<p><strong>要点概述（一句话）</strong></p>
+<ul>
+<li class=""><strong>现在：</strong><code>admin/index.tsx</code> 直接就是 <code>/admin</code> 页面（没有 admin 专属的布局层）。</li>
+<li class="">**子 Layout：**在 admin 下再加一个 <code>_layout</code>（admin 的 layout），然后把 index 和 minda 作为它的子路由 —— 可以给 admin 路由组一个独立的壳（子侧栏、子头部、统一的权限/加载逻辑等）。</li>
+</ul>
+<p><strong>区别与影响（简洁）</strong></p>
+<ul>
+<li class=""><strong>渲染层级</strong>
+<ul>
+<li class="">**现在：**请求 <code>/admin</code> → 渲染 <code>/_layout</code>（全局布局）里的 <code>&lt;Outlet/></code> → 直接渲染 <code>admin/index.tsx</code>。</li>
+<li class="">**子 Layout：**请求 <code>/admin</code> → 渲染 <code>/_layout</code>（全局布局）→ 渲染 <code>admin/_layout.tsx</code>（admin 专属壳，含自己的 <code>&lt;Outlet/></code>）→ 渲染 <code>admin/index.tsx</code> 或 <code>admin/minda.tsx</code>。</li>
+</ul>
+</li>
+<li class=""><strong>能力/好处</strong>
+<ul>
+<li class="">可以在 <code>admin/_layout.tsx</code> 放置只对 admin 子路由可见的 UI（例如 admin 子侧边栏、二级导航、面包屑、统一面包屑标题）。</li>
+<li class="">把 admin 组的 <code>beforeLoad</code>、权限校验、数据预取等放在 admin 的子 Layout，一次生效所有 admin 子路由。</li>
+<li class="">更清晰的代码组织和更好的局部懒加载（admin 的 UI 与子页可以一起 code-split）。</li>
+</ul>
+</li>
+<li class=""><strong>缺点</strong>
+<ul>
+<li class="">增加一个路由层级，路由结构更深（但通常这是值得的）。</li>
+<li class="">实现上需新增一个文件（小成本）。</li>
+</ul>
+</li>
+</ul>
+<p><strong>最小示例（思路：文件与 createFileRoute 的对应关系）</strong></p>
+<ul>
+<li class="">新增 admin 子 Layout（<code>frontend/src/routes/_layout/admin/_layout.tsx</code>）：<!-- -->
+<ul>
+<li class="">使用 <code>createFileRoute("/_layout/admin")</code>，组件内渲染 admin 专属壳并包含 <code>&lt;Outlet/></code>。</li>
+</ul>
+</li>
+<li class="">把现有 <code>admin/index.tsx</code> 改为子路由（或保持为 <code>index.tsx</code>），并将 <code>createFileRoute("/_layout/admin/")</code> 用于 index；<code>minda.tsx</code> 用 <code>createFileRoute("/_layout/admin/minda")</code>。</li>
+</ul>
+<p><strong>伪代码（极简，用以说明关系）：</strong></p>
+<ul>
+<li class=""><code>frontend/src/routes/_layout/admin/_layout.tsx</code>
+<ul>
+<li class=""><code>createFileRoute("/_layout/admin")({ component: AdminLayout })</code> —— <code>AdminLayout</code> 输出 admin 的局部导航 + <code>&lt;Outlet/></code></li>
+</ul>
+</li>
+<li class=""><code>index.tsx</code>
+<ul>
+<li class=""><code>createFileRoute("/_layout/admin/")({ component: AdminIndex })</code></li>
+</ul>
+</li>
+<li class=""><code>minda.tsx</code>
+<ul>
+<li class=""><code>createFileRoute("/_layout/admin/minda")({ component: Minda })</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>何时采用子 Layout（建议）</strong></p>
+<ul>
+<li class="">你需要 admin 下多个页面共享同一套局部 UI（子侧栏、二级导航、统一标题、相同的权限检查或数据预取）→ 使用 admin 子 Layout。</li>
+<li class="">admin 只有一个简单页面且无需共享局部 UI → 直接用 <code>admin/index.tsx</code> 足够。</li>
+</ul>
+<p>要我现在把 admin 改成带子 Layout 的结构并把现有 <code>index.tsx / minda.tsx</code> 挪入吗？</p>
+<p>是的：</p>
+<p>已按你要的方式改好了，当前结构是：</p>
+<ul>
+<li class=""><strong>新增了 admin 子布局：</strong><code>_layout.tsx</code>
+<ul>
+<li class="">它会给 admin 页面提供一个独立的子 shell，里面有 “Users / Minda” 的二级导航。</li>
+</ul>
+</li>
+<li class=""><strong>把原来的 admin 内容拆成了两个子路由：</strong>
+<ul>
+<li class="">首页：<code>index.tsx</code></li>
+<li class="">二级页面：<code>minda.tsx</code></li>
+</ul>
+</li>
+<li class="">侧边栏也同步改成了两个入口，点击 Admin 后可直接进入这两个子页面：<code>AppSidebar.tsx</code></li>
+</ul>
+<p>现在的访问效果是：</p>
+<ul>
+<li class=""><code>/admin</code> → admin 首页</li>
+<li class=""><code>/admin/minda</code> → admin 下的二级页面</li>
+</ul>
+<p>我已经用前端构建做了验证，执行了 <code>npx vite build</code>，构建成功，输出了 dist 产物。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=上述修改后构建报错>上述修改后，构建报错<a href=#上述修改后构建报错 class=hash-link aria-label="Direct link to 上述修改后，构建报错" title="Direct link to 上述修改后，构建报错" translate=no>​</a></h3>
+<p><strong>问题概述</strong>:</p>
+<ul>
+<li class="">
+<p>**错误来源：**在表格里用模板字符串：</p>
+<div class="language-tsx codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-tsx codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">to</span><span class="token operator" style=color:#393A34>=</span><span class="token punctuation" style=color:#393A34>{</span><span class="token template-string template-punctuation string" style=color:#e3116c>`</span><span class="token template-string string" style=color:#e3116c>/items/</span><span class="token template-string interpolation interpolation-punctuation punctuation" style=color:#393A34>${</span><span class="token template-string interpolation">id</span><span class="token template-string interpolation interpolation-punctuation punctuation" style=color:#393A34>}</span><span class="token template-string template-punctuation string" style=color:#e3116c>`</span><span class="token punctuation" style=color:#393A34>}</span><br/></div></code></pre></div></div>
+<p>导航时，TypeScript 会把该字符串视为任意字符串类型，TanStack Router 的 <code>RouterLink</code> 要求 <code>to</code> 必须是已在生成路由表中注册的路径类型（例如 <code>"/items/$id"</code>），所以编译时报类型不匹配错误。</p>
+</li>
+</ul>
+<p><strong>为什么会报错（关键点）</strong>:</p>
+<ul>
+<li class="">TanStack Router 插件会在构建时生成 <code>routeTree.gen.ts</code>，并从中导出严格的路由类型（<code>FileRoutesByPath / to</code> 联合类型）。</li>
+<li class=""><code>RouterLink</code> 的 <code>to</code> 属性被类型限制为这些已注册的路径字面量（比如 <code>"/items"</code>、<code>"/items/$id"</code>），而模板字符串结果不是这些字面量之一，导致 TS 报错并在 Docker 构建（或 CI）时失败。</li>
+</ul>
+<p><strong>错误示例（会报错）</strong></p>
+<div class="language-tsx codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-tsx codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>// 错误：模板字符串不是已注册的路由字面量</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag class-name" style=color:#00009f>RouterLink</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>to</span><span class="token tag script language-javascript script-punctuation punctuation" style=color:#393A34>=</span><span class="token tag script language-javascript punctuation" style=color:#393A34>{</span><span class="token tag script language-javascript template-string template-punctuation string" style=color:#e3116c>`</span><span class="token tag script language-javascript template-string string" style=color:#e3116c>/items/</span><span class="token tag script language-javascript template-string interpolation interpolation-punctuation punctuation" style=color:#393A34>${</span><span class="token tag script language-javascript template-string interpolation" style=color:#00009f>row</span><span class="token tag script language-javascript template-string interpolation punctuation" style=color:#393A34>.</span><span class="token tag script language-javascript template-string interpolation" style=color:#00009f>original</span><span class="token tag script language-javascript template-string interpolation punctuation" style=color:#393A34>.</span><span class="token tag script language-javascript template-string interpolation" style=color:#00009f>id</span><span class="token tag script language-javascript template-string interpolation interpolation-punctuation punctuation" style=color:#393A34>}</span><span class="token tag script language-javascript template-string template-punctuation string" style=color:#e3116c>`</span><span class="token tag script language-javascript punctuation" style=color:#393A34>}</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain-text">  </span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag class-name" style=color:#00009f>Button</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text">Detail</span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag class-name" style=color:#00009f>Button</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain-text"></span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag class-name" style=color:#00009f>RouterLink</span><span class="token tag punctuation" style=color:#393A34>></span><br/></div></code></pre></div></div>
+<p><strong>正确写法（两种常用方式）</strong></p>
+<ul>
+<li class="">使用路由的“typed”路径并传 <code>params</code>（推荐）：<!-- -->
+<div class="language-tsx codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-tsx codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag class-name" style=color:#00009f>RouterLink</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>to</span><span class="token tag attr-value punctuation attr-equals" style=color:#393A34>=</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag attr-value" style=color:#e3116c>/items/$id</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>params</span><span class="token tag script language-javascript script-punctuation punctuation" style=color:#393A34>=</span><span class="token tag script language-javascript punctuation" style=color:#393A34>{</span><span class="token tag script language-javascript punctuation" style=color:#393A34>{</span><span class="token tag script language-javascript" style=color:#00009f> id</span><span class="token tag script language-javascript operator" style=color:#393A34>:</span><span class="token tag script language-javascript" style=color:#00009f> row</span><span class="token tag script language-javascript punctuation" style=color:#393A34>.</span><span class="token tag script language-javascript property-access" style=color:#00009f>original</span><span class="token tag script language-javascript punctuation" style=color:#393A34>.</span><span class="token tag script language-javascript property-access" style=color:#00009f>id</span><span class="token tag script language-javascript" style=color:#00009f> </span><span class="token tag script language-javascript punctuation" style=color:#393A34>}</span><span class="token tag script language-javascript punctuation" style=color:#393A34>}</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain-text">  </span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag class-name" style=color:#00009f>Button</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text">Detail</span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag class-name" style=color:#00009f>Button</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain-text"></span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag class-name" style=color:#00009f>RouterLink</span><span class="token tag punctuation" style=color:#393A34>></span><br/></div></code></pre></div></div>
+</li>
+<li class="">或者直接使用路由对象/辅助（若你有 route 对象可用）：<!-- -->
+<div class="language-tsx codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-tsx codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>// 假设 LayoutItemsIdRoute 是生成的路由对象</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag class-name" style=color:#00009f>RouterLink</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>to</span><span class="token tag script language-javascript script-punctuation punctuation" style=color:#393A34>=</span><span class="token tag script language-javascript punctuation" style=color:#393A34>{</span><span class="token tag script language-javascript maybe-class-name" style=color:#00009f>LayoutItemsIdRoute</span><span class="token tag script language-javascript punctuation" style=color:#393A34>}</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>params</span><span class="token tag script language-javascript script-punctuation punctuation" style=color:#393A34>=</span><span class="token tag script language-javascript punctuation" style=color:#393A34>{</span><span class="token tag script language-javascript punctuation" style=color:#393A34>{</span><span class="token tag script language-javascript" style=color:#00009f> id</span><span class="token tag script language-javascript operator" style=color:#393A34>:</span><span class="token tag script language-javascript" style=color:#00009f> row</span><span class="token tag script language-javascript punctuation" style=color:#393A34>.</span><span class="token tag script language-javascript property-access" style=color:#00009f>original</span><span class="token tag script language-javascript punctuation" style=color:#393A34>.</span><span class="token tag script language-javascript property-access" style=color:#00009f>id</span><span class="token tag script language-javascript" style=color:#00009f> </span><span class="token tag script language-javascript punctuation" style=color:#393A34>}</span><span class="token tag script language-javascript punctuation" style=color:#393A34>}</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain-text">  </span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag class-name" style=color:#00009f>Button</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text">Detail</span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag class-name" style=color:#00009f>Button</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain-text"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain-text"></span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag class-name" style=color:#00009f>RouterLink</span><span class="token tag punctuation" style=color:#393A34>></span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<p><strong>与你项目中相关的文件（便于查阅）</strong></p>
+<ul>
+<li class="">表格列修改点：<code>columns.tsx</code></li>
+<li class="">动态路由文件示例：<code>$id.tsx</code></li>
+<li class="">自动生成的路由类型：<code>routeTree.gen.ts</code> — 可以在这里查看哪些 <code>/to</code> 路径被允许（<code>to</code> 联合类型）。</li>
+</ul>
+<p><strong>部署/构建注意事项（避免在 Docker/CI 出错）</strong></p>
+<ul>
+<li class="">在把改动推到镜像构建之前，本地运行一次完整构建以捕获类型错误：<!-- -->
+<ul>
+<li class=""><code>cd frontend && npm run build</code>（或 <code>npx vite build</code>）</li>
+</ul>
+</li>
+<li class="">确保新路由文件已被写入仓库/构建上下文（Docker 构建读取的是工作区文件），否则生成的路由表不会包含新路径。</li>
+<li class="">如果你重命名/移动路由文件，记得触发生成器（在 dev 模式下 Vite 插件会自动触发；在构建时也会重新生成）。</li>
+</ul>
+<p><strong>最佳实践清单（快速对照）</strong></p>
+<ul>
+<li class="">**路由注册：**文件路径 + <code>createFileRoute</code> 的 path 必须和你期望的 URL 一致（例如 <code>createFileRoute("/_layout/items/$id")</code> → <code>/items/:id</code>）。</li>
+<li class="">**链接写法：**永远用 typed 路径 + <code>params</code>，不要用字符串插值在 <code>to</code> 里。</li>
+<li class="">**检查生成文件：**在 <code>routeTree.gen.ts</code> 里确认允许的 <code>to</code> 值。</li>
+<li class="">**本地先构建：**在推镜像前运行 <code>npm run build</code> 捕获类型问题。</li>
+<li class="">**权限/布局：**若把新路由放到</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/fullsatck/frontend-routes.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/my-website/docs/fullsatck/explain><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>为什么要先用docker compose -f compose.yml -f compose.override.yml build frontend playwright，这个命令是干什么的？</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/my-website/docs/fullsatck/how_to_update><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>做一个简单需求</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#前端路由相关 class="table-of-contents__link toc-highlight">前端路由相关</a><li><a href=#frontendsrcroutes class="table-of-contents__link toc-highlight">frontend/src/routes</a><li><a href=#我看到_layout出现在路由路径里但页面实际显示时只有_layout后面的部分是为什么 class="table-of-contents__link toc-highlight">我看到_layout出现在路由路径里，但页面实际显示时只有_layout后面的部分，是为什么？</a><li><a href=#如果想做二级目录路由文件应该怎么改以在items页面的表格的最后一列前加一个action操作列操作列是一个按钮点击跳转到一个新的页面detail要怎么操作 class="table-of-contents__link toc-highlight">如果想做二级目录，路由文件应该怎么改？以在items页面的表格的最后一列前加一个action操作列，操作列是一个按钮，点击跳转到一个新的页面detail要怎么操作？</a><li><a href=#如果我想在一级目录admin下增加一层二级目录就还在主页的左侧的目录里点击admin会出现两个二级目录第一个就是现在的admin的内容第二个叫minda这一顿话路由文件应该怎么改 class="table-of-contents__link toc-highlight">如果我想在一级目录admin下增加一层二级目录，就还在主页的左侧的目录里，点击admin会出现两个二级目录，第一个就是现在的admin的内容，第二个叫minda，这一顿话路由文件应该怎么改？</a><li><a href=#上述修改后构建报错 class="table-of-contents__link toc-highlight">上述修改后，构建报错</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/my-website/docs/intro>Tutorial</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/my-website/blog>Blog</a><li class=footer__item><a href=https://github.com/facebook/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div></body>
